@@ -204,29 +204,6 @@ export const VNU_RUBRIC_SECTIONS: RubricSection[] = [
     ],
   },
   {
-    id: 's7_5',
-    title: 'Nhiệm vụ 7: Quy trình Telemedicine hỗ trợ AI',
-    levelLabel: 'Mức 4 — 1 điểm',
-    focus: 'Trọng tâm: Kỹ năng thiết kế quy trình Telemedicine có tích hợp trợ lý AI.',
-    items: [
-      {
-        id: 's7_5-1',
-        label: 'Quy trình rõ ràng',
-        description: 'Thiết kế quy trình Telemedicine gồm 5-8 bước rõ ràng cho bệnh nhân tăng huyết áp ở vùng cao.',
-      },
-      {
-        id: 's7_5-2',
-        label: 'Tích hợp trợ lý AI',
-        description: 'Xác định rõ vai trò của AI ở từng bước (sàng lọc chatbot, thiết bị đo IoT, phân tích nguy cơ đột quỵ, nhắc lịch).',
-      },
-      {
-        id: 's7_5-3',
-        label: 'Thách thức & Giải pháp',
-        description: 'Phân tích sâu sắc rào cản công nghệ đường truyền, rào cản người cao tuổi và đề xuất các giải pháp khả thi.',
-      },
-    ],
-  },
-  {
     id: 's8',
     title: 'Tổng kết và đánh giá bản thân',
     levelLabel: 'Mức 4 — 1 điểm',
@@ -257,7 +234,7 @@ export const VNU_RUBRIC_SECTIONS: RubricSection[] = [
 export const PORTFOLIO_RUBRIC_SECTION = VNU_RUBRIC_SECTIONS[0];
 
 export function getTaskRubricSection(lessonIndex: number): RubricSection | undefined {
-  if (lessonIndex < 0 || lessonIndex > 6) return undefined;
+  if (lessonIndex < 0 || lessonIndex > 5) return undefined;
   return VNU_RUBRIC_SECTIONS[lessonIndex + 1];
 }
 
@@ -277,7 +254,7 @@ export function rubricSectionNumber(sectionId: string): number {
   return idx >= 0 ? idx + 1 : 0;
 }
 
-export const SUMMARY_RUBRIC_SECTION = VNU_RUBRIC_SECTIONS[8];
+export const SUMMARY_RUBRIC_SECTION = VNU_RUBRIC_SECTIONS[7];
 
 export function countSectionItems(sections: RubricSection[]): number {
   return sections.reduce((n, s) => n + s.items.length, 0);

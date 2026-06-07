@@ -233,22 +233,6 @@ function App() {
       images: [],
       imageDescriptions: [],
       detailedSummary: 'Bài tập 6 định hình tư duy sử dụng AI có trách nhiệm. Qua việc thực hành lập bài luận đạo đức số, em hiểu rằng AI chỉ là công cụ bổ trợ, giá trị cốt lõi nằm ở tư duy độc lập, tinh thần trách nhiệm giải trình và sự liêm chính học thuật của bản thân.'
-    },
-    {
-      id: 'bt7',
-      coverImage: '/images/anh_7.jpg',
-      label: 'Bài 7: Quy trình Telemedicine hỗ trợ AI',
-      fullName: 'Bài tập 7 — Thiết kế quy trình khám bệnh từ xa hỗ trợ AI cho bệnh tăng huyết áp',
-      objective: 'Ứng dụng các công cụ y tế số và hệ thống AI (Chatbot, thiết bị đo huyết áp IoT, AI Cloud, IBM Watson, EMR/EHR) để thiết kế quy trình Telemedicine cho bệnh nhân tăng huyết áp ở xã miền núi.',
-      process: 'Xây dựng sơ đồ quy trình khám bệnh từ xa 5 bước, phân tích chi tiết vai trò của trợ lý AI trong từng giai đoạn (đăng ký, sàng lọc triệu chứng, thu thập chỉ số tự động, phân tích cảnh báo nguy cơ biến chứng, nhắc lịch), và đánh giá các thách thức công nghệ vùng cao.',
-      product: 'Báo cáo thiết kế quy trình Telemedicine hỗ trợ AI cho bệnh nhân tăng huyết áp miền núi.',
-      fileUrl: '/files/Bai_7_TranMinhLuong.pdf',
-      fileName: 'Bai_7_TranMinhLuong.pdf',
-      fileType: 'pdf',
-      skills: ['Telemedicine', 'AI y tế', 'Thiết bị IoT', 'Quy trình lâm sàng'],
-      images: [],
-      imageDescriptions: [],
-      detailedSummary: 'Bài tập 7 giúp em tối ưu hóa quy trình chăm sóc sức khỏe cộng đồng bằng công nghệ số. Việc thiết kế quy trình Telemedicine tích hợp AI cho thấy tiềm năng to lớn của y tế thông minh trong việc kết nối bác sĩ chuyên khoa với bệnh nhân vùng cao khó tiếp cận.'
     }
   ];
 
@@ -647,7 +631,7 @@ function App() {
               ))}
               <div className="pt-3 mt-2 border-t-2 border-[#dbeafe]/40">
                 <span className="text-[9px] font-black uppercase tracking-widest text-[#1b365d]/50 dark:text-sky-500 block mb-2 px-1">
-                  7 bài tập
+                  {portfolioProjects.length} bài tập
                 </span>
                 {portfolioProjects.map((proj, idx) => (
                   <button
@@ -804,7 +788,7 @@ function App() {
                 Bài Tập Thực Hành
               </h3>
               <p className="text-xs sm:text-sm text-[#1b365d]/70 dark:text-blue-300 max-w-2xl mx-auto mt-3 font-semibold font-sans">
-                Hệ thống 7 bài tập lớn rèn luyện năng lực số chuẩn công nghệ số được thực hiện chi tiết theo quy trình nghiên cứu học thuật.
+                Hệ thống {portfolioProjects.length} bài tập lớn rèn luyện năng lực số chuẩn công nghệ số được thực hiện chi tiết theo quy trình nghiên cứu học thuật.
               </p>
             </div>
 

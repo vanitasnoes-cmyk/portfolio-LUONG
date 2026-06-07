@@ -45,7 +45,7 @@ export function RubricProgressMap({ onGoToLesson }: RubricProgressMapProps) {
       document.getElementById('gioi-thieu')?.scrollIntoView({ behavior: 'smooth' });
       return;
     }
-    if (sectionIndex === 8) {
+    if (sectionIndex === 7) {
       document.getElementById('tong-ket')?.scrollIntoView({ behavior: 'smooth' });
       return;
     }
@@ -59,7 +59,7 @@ export function RubricProgressMap({ onGoToLesson }: RubricProgressMapProps) {
           <Map className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0" aria-hidden />
           <div>
             <h5 className="text-blue-900 dark:text-blue-200 text-xs sm:text-sm font-extrabold uppercase tracking-wider font-sans">
-              Bản đồ tiến độ Rubric (9 mục)
+              Bản đồ tiến độ Rubric (8 mục)
             </h5>
             <p className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
               Tự đánh giá toàn học phần · {globalDone}/{TOTAL_RUBRIC_ITEMS} tiêu chí ({globalPct}%)
@@ -108,7 +108,7 @@ export function RubricProgressMap({ onGoToLesson }: RubricProgressMapProps) {
               <span className="flex-1 min-w-0 truncate leading-tight">
                 {idx === 0
                   ? 'Portfolio (UX)'
-                  : idx === 8
+                  : idx === 7
                     ? 'Tổng kết'
                     : section.title.replace(/^Nhiệm vụ (\d+): .+$/, 'Nhiệm vụ $1')}
               </span>
@@ -121,7 +121,7 @@ export function RubricProgressMap({ onGoToLesson }: RubricProgressMapProps) {
       </div>
 
       <p className="text-[10px] text-slate-400 dark:text-slate-550 italic leading-relaxed">
-        Mục 1 → Lời mở đầu · Mục 2–8 → Bài 1–7 · Mục 9 → Tổng kết. Mỗi trang chỉ hiển thị checklist
+        Mục 1 → Lời mở đầu · Mục 2–7 → Bài 1–6 · Mục 8 → Tổng kết. Mỗi trang chỉ hiển thị checklist
         khớp nội dung đang xem.
       </p>
     </div>

@@ -64,13 +64,5 @@ export const LESSON_STEPS: LessonStep[][] = [
     { text: '3. Thẩm định phản biện và cải thiện bài luận: Phản biện nội dung do AI viết, phát hiện ảo giác trích dẫn giả, hiệu đính thuật ngữ chuyên ngành (đạo văn phi truyền thống) và chuyên nghiệp hóa giọng văn.' },
     { text: '4. Bộ nguyên tắc cá nhân: Đúc kết 6 nguyên tắc vàng sử dụng AI có trách nhiệm (Trung thực & minh bạch, Giữ vai trò chủ động, Tôn trọng bản quyền, Kiểm chứng thông tin, Phát triển năng lực, Trách nhiệm xã hội).' },
     { text: '5. Thiết kế Infographic truyền thông: Thiết kế infographic trực quan hóa các nguyên tắc "Sử dụng AI có trách nhiệm trong học thuật" phục vụ tuyên truyền liêm chính học thuật cho sinh viên.' }
-  ],
-
-  // ─── BÀI 7: Quy trình khám bệnh từ xa (Telemedicine) hỗ trợ AI cho bệnh tăng huyết áp ───
-  [
-    { text: '1. Đề xuất quy trình Telemedicine hỗ trợ AI: Lên ý tưởng quy trình khám bệnh từ xa cho bệnh nhân tăng huyết áp tại vùng núi khó khăn. Sử dụng hệ thống thông báo AI, thiết bị đeo thông minh đo huyết áp IoT, IBM Watson Health và hồ sơ sức khỏe điện tử EMR/EHR.' },
-    { text: '2. Thiết kế Flowchart quy trình khám bệnh: Xây dựng sơ đồ 5 bước: (1) Sàng lọc ban đầu qua Chatbot, (2) Đo huyết áp bằng thiết bị IoT tại trạm y tế, (3) AI Cloud phân tích dữ liệu & cảnh báo, (4) Hội chẩn trực tuyến với bác sĩ tuyến trên, (5) AI trợ lý nhắc lịch uống thuốc.' },
-    { text: '3. Phân tích chi tiết vai trò của AI: Mô tả vai trò AI qua 8 giai đoạn từ đăng ký khám, sàng lọc triệu chứng, thu thập chỉ số nhịp tim/huyết áp tự động, phân tích cảnh báo nguy cơ biến chứng đột quỵ đến kê đơn và theo dõi sau khám lâm sàng.' },
-    { text: '4. Đánh giá thách thức triển khai vùng cao: Phân tích 2 thách thức chính: hạ tầng Internet vùng núi không đồng đều (giải pháp: đồng bộ ngoại tuyến, tối ưu băng thông rộng) và người cao tuổi khó dùng công nghệ (giải pháp: trợ lý giọng nói tiếng Việt, nhân viên y tế hỗ trợ tại xã).' }
   ]
 ];
